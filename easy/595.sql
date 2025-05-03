@@ -1,0 +1,3 @@
+-- 2024.10.08
+
+select name, population, area from world where area >= 3000000 or population >= 25000000;
