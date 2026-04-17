@@ -9,7 +9,7 @@ class Solution:
         # เช่น [bar, foo, the] มีอย่างละ 1
         word_counts = {}
         for w in words:
-            word_counts.get(w, 0) + 1
+            word_counts[w] = word_counts.get(w, 0) + 1
 
         ans = []
 
