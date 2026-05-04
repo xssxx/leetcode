@@ -1,3 +1,5 @@
+# 4.5.2026
+
 class Solution:
     def simplifyPath(self, path: str) -> str:
         sp = path.split('/')
@@ -13,3 +15,13 @@ class Solution:
 
         ans = '/' + ''.join(st)[:-1]
         return ans
+        
+"""
+
+Example:
+"/.../a/../b/c/../d/./"            ->     "/.../b/d"
+"/../"                             ->     "/"
+"/home//foo/"                      ->     "/home/foo"
+"/home/user/Documents/../Pictures" ->     "/home/user/Pictures"
+
+"""
